@@ -1,0 +1,216 @@
+html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom left, deepskyblue, white 50%);
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    padding: 10px;
+    gap: 800px;
+}
+
+.logo-nav h2{
+    padding-left: 30px;
+    font-size: 25px;
+    color: deepskyblue;
+}
+
+.logo-nav h2:hover{
+    cursor: pointer;
+}
+
+.list-nav-ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    padding-top: 7px;  
+}
+
+.list-nav-ul a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.list-nav-ul a:hover{
+    background-color: deepskyblue;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+/* content */
+main{
+    display: grid;
+    grid-template-columns: 60% auto;
+    padding: 100px 0px 100px 0px;
+}
+
+section{
+    justify-self: center;
+    align-self: center;
+}
+
+img{
+    width: 500px;
+}
+
+.karier{
+    color: deepskyblue;
+}
+
+.content-text{
+    padding-right: 200px;
+}
+
+.content-text h1{
+    font-size: 40px;
+}
+
+.content-text h2{
+    font-size: 20px;
+}
+
+.content-text p{
+    font-size: 15px;
+}
+/* content */
+
+/* button */
+.button{
+    display: flex;
+    gap: 30px;
+}
+
+.singup{
+    margin: 10px 0px 0px 0px;
+    border-radius: 10px;
+    border-color: deepskyblue;
+    background-color: deepskyblue;
+    padding: 10px;
+}
+
+.singup a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    padding: 25px;
+}
+
+.singup:hover{
+    background-color: white;
+    color: deepskyblue;
+    transition: ease-in-out 0.3s;
+}
+
+.singup a:hover{
+    color: deepskyblue;
+    transition: ease-in-out 0.3s;
+}
+
+.login{
+    margin: 10px 0px 0px 0px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: white;
+    padding: 10px;
+}
+
+.login a{
+    text-decoration: none;
+    color: deepskyblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    padding: 25px;
+}
+
+.login:hover{
+    background-color: deepskyblue;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.login a:hover{
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+/* button */
+
+@media (max-width: 600px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(390px,100px));
+        padding: 100px 0px 100px 0px;
+    }
+
+    section.content-gambar{
+        justify-self: center;
+        align-self: center;
+    }
+
+    img{
+        width: 300px;
+    }
+
+    .karier{
+        color: deepskyblue;
+    }
+
+    /* .content-text{
+        padding-right: 200px;
+    } */
+
+    .content-text{
+        display: inline;
+        justify-content: center;
+        padding-left: 100px;
+    }
+
+    .content-text h1{
+        font-size: 40px;
+        justify-self: center;
+    }
+
+    .content-text h2{
+        font-size: 20px;
+    }
+
+    .content-text p{
+        font-size: 15px;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    .list-nav-ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 500px;
+        padding-top: 7px;
+    }
+}
